@@ -1,0 +1,11 @@
+// Custom SCSS
+// General
+$body-bg: #555;
+
+body {
+  background: $body-bg;
+}
+
+.nav-active {
+  text-decoration: underline;
+}

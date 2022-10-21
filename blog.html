@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog
+description: Writings of sorts
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}" class="post-title">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
+{% for post in site.posts %}
