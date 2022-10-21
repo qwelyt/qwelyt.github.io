@@ -7,6 +7,7 @@
 #
 layout: default
 title: Hi
+description: Flee you fools
 ---
 
   Hi. I'm qwelyt. I build things and stuffs. You'll mostly find my projects to be about keybords. I design, build, and code them. They are odd, they are strange, they are jank, they are for me. If you like them as well, great!

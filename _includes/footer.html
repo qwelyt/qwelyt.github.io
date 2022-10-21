@@ -1,18 +1,26 @@
-<footer class="bottom-footer">
-    <!-- <span class="mini-note">You've reached the end of the page. Good job!</span> -->
-    <!-- <nav class="sans">
-        <hr>
-        <p><label class="menu-icon" for="menu-btn">Menu</label></p>
-        <ul class="site-nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/designs">Designs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="https://canisee.xyz" title="Confirm your vision functionality">[Can I See]</a></li>
-        </ul>
-    </nav> -->
-    <i>Theme 
-        <a href="https://knhash.in/jekyllBear" title="the art">jekyllBear</a> built and maintained by
-        <a href="https://knhash.in" title="the artist">knhash</a>
-    </i>
+<footer class="page-footer">
+  <center>
+    {% if site.theme_switch == true %}
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <a onclick="toggleTheme();">
+          Light/Dark
+        </a>
+      </div>
+    </div>
+    {% endif %}
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        {% include links.html %}
+      </div>
+    </div>
+    {% if site.email != null and site.author != null %}
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        Copyright (c) 20{{ site.time | date: '%y' }} {{site.author}} -
+        <a href="mailto:{{site.email}}">&lt;{{site.email}}&gt;</a>
+      </div>
+    </div>
+    {% endif %}
+  </center>
 </footer>

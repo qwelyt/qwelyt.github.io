@@ -1,8 +1,7 @@
 ---
-layout: blog
+layout: blog-index
 title: Blog
 description: Writings of sorts
-permalink: /blog
 ---
 
-Here be drgons
+Ramblings goes here
