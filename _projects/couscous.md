@@ -1,5 +1,6 @@
 ---
-name: couscous
-type: keyboard
+layout: project
+title: couscous
+tag_name: couscous
 ---
-A PCB for a keyboard Seeed fusion and stuff
+Awesome Seeed Fusion competition project

@@ -1,17 +1,21 @@
-repository: qwelyt/qwelyt.github.io
-website: https://qwelyt.github.io
 github_username: qwelyt
 
-remote_theme: luxedo/jekyll-theme-potato-hacker
-
-theme_base: "dark"
-theme_switch: on
-highlighter_theme: monokai
-blog: on
-toolbar_priority:
-  - Home
-  - Projects
-  - Blog
 collections:
-  dropdown:
+  projects:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
