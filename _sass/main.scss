@@ -77,6 +77,22 @@ nav > a:hover {
   text-decoration: underline;
 }
 
+footer {
+  grid-row: -1;
+  grid-column-start: 2;
+  grid-column-end: -2;
+  text-align: center;
+  color: $text-colour;
+
+  a {
+    text-decoration: none;
+    color: $text-colour;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 .content {
   grid-row-start: 3;
   grid-row-end: auto;

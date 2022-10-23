@@ -1,7 +1,7 @@
 ---
 layout: post
 title: couscous delivery!
-tag: couscous
+tags: couscous pcb seeed
 ---
 Got my board from Seeed Fusion today! Very excited to get started.
 

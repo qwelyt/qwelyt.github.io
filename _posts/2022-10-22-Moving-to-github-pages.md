@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Moving to GitHub Pages!
-tag: ramblings
+tags: ramblings
 ---
 I'm moving all my stuff to GitHub pages!
 

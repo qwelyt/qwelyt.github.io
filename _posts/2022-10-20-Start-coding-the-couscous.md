@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Start coding the couscous
-tag: couscous
+tags: couscous pcb seeed
 ---
 Setting up rust is not the easiest thing in my day.
 
