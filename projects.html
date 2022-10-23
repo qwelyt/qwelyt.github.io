@@ -6,7 +6,7 @@ title: Projects
   {% for project in site.projects %}
     <li>
       <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-      {{ project.excerpt }}
+      {{ project.one_liner }}
     </li>
   {% endfor %}
 </ul>

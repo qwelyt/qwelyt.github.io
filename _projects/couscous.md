@@ -3,6 +3,7 @@ layout: project
 title: couscous
 tag_name: couscous
 repo: https://github.com/qwelyt/couscous
+one_liner: 60 key keyboard based on Seeed XIAO rp2040
 ---
 couscous is a keyboard using the Seeed XIAO rp2040 micro controller. It has 60 keys in a 5x6  duplex matrix. It is a mono-split design with skews halves.
 
