@@ -15,11 +15,14 @@ So what about that other one with a rp2040-project? You can find that one [here]
 
 I cloned dnaqs code and just swapped the mcu-crate out to the seeeduino one, and that seems to work without issue!
 
-Now I just need to get something working. I created a simple blinky but that didn't work. Once again dnaq to the rescue with suggestions on how to fix them. I had a big scare that I managed to brick one of my boards last night. I flashed my firmware, went outside, came back, and it did't work. *"Okay, fine, lets just flash a new version*. Excep, now the board is not found in `lsusb` anymore. Nothing I do seems to work. Turns out writing code an 2AM is a stupid idea. I, in all likelyhood, mistook the R and B button. Sleepy and reading text for ants is not a great combo. Tried it again this night (with tips from dnaq)
+Now I just need to get something working. I created a simple blinky but that didn't work. Once again dnaq to the rescue with suggestions on how to fix them. I had a big scare that I managed to brick one of my boards last night. I flashed my firmware, went outside, came back, and it did't work. *"Okay, fine, lets just flash a new version*. Except, now the board is not found in `lsusb` anymore. Nothing I do seems to work. Turns out writing code an 2AM is a stupid idea. I, in all likelihood, mistook the R and B button. Sleepy and reading text for ants is not a great combo. Tried it again this night (with tips from dnaq) and it showed up in `lsusb` ready to be mounted and flashed.
 
-My first task is to get blinky working. Thin I can start looking to how to code them.
+My first task is to get blinky working. Then I can start looking at how to code them.
 
-Or actually, I think my first task right now is "Go to sleep you dumdum" as I stayed up waaaay to late last night and its soon midnight. But progress **has** been made! I can flash the baord! I can run code on it (i think). We'll see how long it takes to actually code this. I have thoughts about writing it all in an arduino-sketch and then porting that to Rust. Or I can allow dnaq two guide me and to it correctly the first tim.
+Or actually, I think my first task right now is "Go to sleep you dumdum" as I stayed up waaaay to late last night and its soon midnight. But progress **has** been made! I can flash the board! I can run code on it (I think). We'll see how long it takes to actually code this. I have thoughts about writing it all in an arduino-sketch and then porting that to Rust. Or I can allow dnaq too guide me and do it correctly the first time.
 
 
-Sorry about any spelling misstake. I'm almost falling asleep in front of my screen. 
+Sorry about any spelling mistake. I'm almost falling asleep in front of my screen.
+
+
+// This post had *a lot* of spelling mistakes and have since been corrected. Pro-tip: Don't try to code or write posts when you are half asleep. -- qwelyt 2022-10-31
