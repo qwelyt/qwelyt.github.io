@@ -1,24 +1,25 @@
 ---
 layout: post
-title: couscous delivery!
+title: Up! But down. And frustration
 tags: couscous pcb seeed
 ---
-Got my board from Seeed Fusion today! Very excited to get started.
+I have a working rust environment and can finally actually flash my board.
 
-So, what is this? Well, Seeed Fusion had a competition. "Design a mechanical keyboard using ou Seeed XIAO mcu as the brains and we produce it for free, with all components." That's a radical way to market yourself. So I did what any DIYer would do. I learnt KiCAD and designed a board.
+So I finally got the time to actually start coding the thing. And the first thing to do before coding is setting up your environment. Bugger me this is not the easiest when using a new mcu, a language you are not used to, and wanting to do things yourself.
 
-And now my boards have arrived! I can finally start working on them to get them operational.
+I had a lot of problems just trying to get a blinky working (still can't!). Let alone actually starting to get a keyboard working. But at least now I can actually start coding for the thing. I am fortunate enough to frequent the same discord server as another user that has coded a keyboard using rust, and on a rp2040! A pico was used in that case, but just swap the crate and fix the pins and you are good to go.
 
-An unfortunate part on my end is that I took to long to actually send in my design so some components are missing from my boards. I designed an analogue backlight circuit using 5v and GND. You control the RGBA channels using potentiometers and each channel has a SPST switch so you can turn that colour on or off. But Seeed Fusion didn't have neither the pots or the LEDs I needed at their place so they would have to order from overseas. And since I was late in my entry they wouldn't get their parts before the competition ended. So I removed those from the BOM and thought that I could perhaps fix those myself.  
-Well, now that I have the boards that might not be so easy. The pots sure, those are just standard THT parts. Easypeasy. The LEDs though ... SMD things are small and might be quite hard to get right.
+So anyway. I tried to get the [seeeduino-xiao-rp2040](https://github.com/rp-rs/rp-hal/tree/main/boards/seeeduino-xiao-rp2040) blinky example. I can build that project when cloning the code, but not when I copy the code to my project. That's annoying indeed. I think that repo would benefit from having examples in different projects. That way a user has a much easier time getting up and running.
 
-I will wait a bit on ordering the parts I need for backlight and just try to get the board up and running. My plan is to code the thing in Rust. I picked the XIAO rp2040 with this in mind. The rp2040 seems to have good support in Rust, and there is even a HAL just for the XIAO. Sweet!
+So what about that other one with a rp2040-project? You can find that one [here](https://github.com/dnaq/srt400-pico). dnaq is really helpful for us not as bright individuals. I've gotten lots of help before when I did AoC in rust. dnaq really helped getting runnable rust-code.
 
-Oh, and holy smokes those LEDs on the XIAO are bright. I thought I would be able to have the mcu on full display but if I can't turn the brightness of those LEDs down I will have to be covered up.
+I cloned dnaqs code and just swapped the mcu-crate out to the seeeduino one, and that seems to work without issue!
 
-Some pics of the board
-![Picture of two populated PCBs](https://media.discordapp.net/attachments/451377963863244811/1031503227444789338/PXL_20221017_094349441.jpg "couscous pcbs")  
-![Close up of diodes](https://media.discordapp.net/attachments/451377963863244811/1031503337432039444/PXL_20221017_094405275.MP.jpg "Diodes not placed super neatly")
-![Close up of backside, one switch leg missing solder](https://media.discordapp.net/attachments/451377963863244811/1031503337708859452/PXL_20221017_094435636.MP.jpg "Missing solder on SW36")
+Now I just need to get something working. I created a simple blinky but that didn't work. Once again dnaq to the rescue with suggestions on how to fix them. I had a big scare that I managed to brick one of my boards last night. I flashed my firmware, went outside, came back, and it did't work. *"Okay, fine, lets just flash a new version*. Excep, now the board is not found in `lsusb` anymore. Nothing I do seems to work. Turns out writing code an 2AM is a stupid idea. I, in all likelyhood, mistook the R and B button. Sleepy and reading text for ants is not a great combo. Tried it again this night (with tips from dnaq)
 
-Some mistakes on the boards. Each of them has a switch leg that is not soldered. And the diodes could have been done neater. But aside from those I have no complaints!
+My first task is to get blinky working. Thin I can start looking to how to code them.
+
+Or actually, I think my first task right now is "Go to sleep you dumdum" as I stayed up waaaay to late last night and its soon midnight. But progress **has** been made! I can flash the baord! I can run code on it (i think). We'll see how long it takes to actually code this. I have thoughts about writing it all in an arduino-sketch and then porting that to Rust. Or I can allow dnaq two guide me and to it correctly the first tim.
+
+
+Sorry about any spelling misstake. I'm almost falling asleep in front of my screen. 
