@@ -1,4 +1,4 @@
----
+_---
 layout: post
 title: A working couscous!
 tags: couscous pcb seeed
@@ -15,7 +15,7 @@ Anyhow, the actual keyboard. Works! A few bugs, as there always are, but working
 # Software
 This is the first time I actually wrote Rust code for anything real. I did last years Advent of Code in Rust which made me want to use it. And now I've written a keyboards firmware in it! That is pretty awesome to me. I will for sure prefer Rust over C when writing more things.
 
-The most interesting thing to me is how many keys you can fit on so few pins. There 11 pins used. And there are 60 keys. Just by being a bit clever with how you design and scan the matrix you can get in a whole lotta keys.
+The most interesting thing to me is how many keys you can fit on so few pins. There are 11 pins used. And there are 60 keys. Just by being a bit clever with how you design and scan the matrix you can get in a whole lotta keys.
 
 There are still a few things that are strange in the code. I have ghosting for some keys, but on a row below it it does not exhibit the same behavior. So odd. I am guessing it is due to switching pin states in an odd fashion. The current implementation is very naïve. Writing a better way is high on my todo-list.
 
