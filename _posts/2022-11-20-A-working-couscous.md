@@ -10,7 +10,7 @@ And now a working couscous!
 
 Unfortunately I did a screw up with the switches for the LEDs. I selected SPST-NO instead of SPST-toggle. This means that the LEDs won't work unless I bridge them. Due to this I have not bothered getting the LED modules or the potentiometers for the LEDs. But the idea works!
 
-Anyhow, the actual keyboard. Works! A few bugs, as there always are, but working. Every key works, I have no problem typing on it (doing it now!). Source code over at https://github.com/qwelyt/couscous
+Anyhow, the actual keyboard. Works! A few bugs, as there always are, but working. Every key works, I have no problem typing on it (doing it now!). Source code over at [https://github.com/qwelyt/couscous](https://github.com/qwelyt/couscous)
 
 # Software
 This is the first time I actually wrote Rust code for anything real. I did last years Advent of Code in Rust which made me want to use it. And now I've written a keyboards firmware in it! That is pretty awesome to me. I will for sure prefer Rust over C when writing more things.
